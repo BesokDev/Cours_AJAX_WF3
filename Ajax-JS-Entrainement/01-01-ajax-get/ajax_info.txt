@@ -1,0 +1,1 @@
+Je suis le texte chargé en AJAX depuis le fichier !
