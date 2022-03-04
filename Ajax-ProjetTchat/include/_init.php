@@ -21,3 +21,20 @@ function dd($param) {
 
     die();
 }
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Fonction de déduction d'age à partir de la date de naissance
+
+function age($birthday) {
+
+    list($y, $m, $d) = explode('-', $birthday);
+
+    if (($m = (date ('m') - $m )) < 0) {
+        $y++;
+    }
+    elseif ($m == 0 && date ('d') - $d < 0 ) {
+        $y++;
+    }
+
+    return date ('Y') - $y;
+}
