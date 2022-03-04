@@ -50,4 +50,6 @@ if($mode == 'envoi') {
 
 } // fin du else
 
+    $tab['validation'] = "ok";
+
 echo json_encode($tab);
